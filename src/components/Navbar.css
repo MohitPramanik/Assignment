@@ -1,0 +1,81 @@
+.list-item:hover .sublist-item {
+    display: inline-block;
+}
+
+@media (max-width: 1171px) {
+    nav {
+        height: 300px;
+        width: 80% !important;
+        left: 10%;
+        overflow: auto;
+        background: white;
+        padding: 0 !important;
+        margin-top: 200px !important;
+    }
+
+    #menu {
+        flex-direction: column;
+        color: grey;
+        width: 100%;
+    }
+
+    .list-item-box {
+        width: 100%;
+    }
+
+    .list-item {
+        margin: 0 !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    #menu li {
+        width: 100%;
+        padding-top: 2.5rem !important;
+        padding-bottom: 2.5rem !important;
+    }
+
+    #menu li span {
+        padding-left: 16px;
+    }
+
+    #menu li ul {
+        position: relative;
+        width: 100%;
+        left: 0;
+        top: 0;
+        border: none;
+    }
+
+    .link-area {
+        justify-content: start !important;
+    }
+
+    .heart-icon {
+        display: none;
+    }
+
+    .circle-icon {
+        position: fixed;
+        top: 30px;
+        left: 30px;
+        width: 5rem !important;
+    }
+
+    .circle-icon span {
+        top: -10px;
+        left: -9px;
+        text-align: center;
+        width: 100%;
+        color: white;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    .nav-icon {
+        position: flex !important;
+        display: flex !important;
+    }
+}

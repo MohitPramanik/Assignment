@@ -1,0 +1,41 @@
+.img-container {
+    height: 100vh;
+    width: 100vw;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    /* Add this */
+}
+
+.parallex {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.parallex .img-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-position: center;
+    transform: translateZ(-1px) scale(2);
+}
+
+@media (max-width: 895px) {
+    .about-person {
+        width: 90%;
+    }
+}
+
+@media (min-width: 896px) {
+    .about-person {
+        max-width: 400px;
+    }
+}
