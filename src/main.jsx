@@ -7,26 +7,29 @@ import Home from "./Pages/Home/Home.jsx";
 import Him from "./Pages/About/Him.jsx";
 import Her from "./Pages/About/Her.jsx";
 
-const router = createBrowserRouter([
-    {
-        path: "/",
-        element: <App />,
-        children: [
-            {
-                path: "",
-                element: <Home />,
-            },
-            {
-                path: "aboutHim",
-                element: <Him />,
-            },
-            {
-                path: "aboutHer",
-                element: <Her />,
-            },
-        ],
-    },
-]);
+const router = createBrowserRouter(
+    [
+        {
+            path: "/",
+            element: <App />,
+            children: [
+                {
+                    path: "",
+                    element: <Home />,
+                },
+                {
+                    path: "aboutHim",
+                    element: <Him />,
+                },
+                {
+                    path: "aboutHer",
+                    element: <Her />,
+                },
+            ],
+        },
+    ],
+    { basename: import.meta.env.DEV ? "/" : "/react-vite-gh-pages/" }
+);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
